@@ -1,0 +1,20 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class First {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("창이름");
+		
+		JLabel label = new JLabel("기본값");
+		label.setText("잘가"); //label에 기본값이라는 글씨를 중간에 잘가로 바꿔준다.
+		
+		frame.add(label);
+		//frame.pack(); 
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //X버튼을 누르면 프로그램도 같이 종료된다.(원래는 프로그램 종료가 같이 되지 않는다.)
+		
+	}
+
+}
